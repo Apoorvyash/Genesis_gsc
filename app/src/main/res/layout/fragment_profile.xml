@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.profile.ProfileFragment">
+
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:id="@+id/cons_layout"
+       android:layout_width="match_parent"
+       android:layout_height="?android:attr/actionBarSize"
+       app:layout_constraintEnd_toEndOf="parent"
+       android:background="@color/white"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent">
+      <ImageView
+          android:id="@+id/backBtn"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="16dp"
+          android:layout_weight="1"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
+
+      <TextView
+          android:id="@+id/textView3"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_weight="3"
+          android:text="Mother's Profile"
+          android:textColor="@color/black"
+          android:textSize="24dp"
+          android:fontFamily="@font/firasans_semibold"
+          android:textStyle="bold"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+   <ScrollView
+       android:id="@+id/scrollView2"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       app:layout_constraintEnd_toEndOf="@id/cons_layout"
+       app:layout_constraintStart_toStartOf="@id/cons_layout"
+       app:layout_constraintTop_toBottomOf="@id/cons_layout"
+       app:layout_constraintBottom_toBottomOf="parent">
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_marginTop="10dp">
+
+         <RelativeLayout
+             android:id="@+id/rl"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginEnd="10dp"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/mom_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/momimg"
+                tools:layout_editor_absoluteX="82dp"
+                tools:layout_editor_absoluteY="69dp" />
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@+id/mom_img"
+                android:layout_toRightOf="@+id/mom_img"
+                android:orientation="horizontal">
+
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="8dp"
+                   android:layout_marginTop="3dp"
+                   android:text="Pragya Singh"
+                   android:textColor="@color/black"
+                   android:textSize="22dp"
+                   android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mom_rec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linear_layout1"
+                android:layout_marginStart="8dp"
+                android:layout_toRightOf="@id/mom_img">
+
+               <TextView
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="8dp"
+                   android:layout_marginTop="3dp"
+                   android:fontFamily="@font/firasans_semibold"
+                   android:text="4 months Pregnant Mother"
+                   android:textColor="@color/black"
+                   android:textSize="16dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mom_rec"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@+id/mom_img"
+                android:layout_toRightOf="@+id/mom_img"
+                android:orientation="horizontal">
+
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="8dp"
+
+                   android:text="Joined on March2, 2023"
+                   android:textColor="@color/black"
+                   android:textSize="14dp" />
+
+
+            </LinearLayout>
+
+
+         </RelativeLayout>
+
+         <TextView
+             android:id="@+id/appointment_text"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:fontFamily="@font/firasans_semibold"
+             android:layout_marginStart="10dp"
+             android:layout_marginTop="10dp"
+             android:padding="4dp"
+             android:text="Your Appointments"
+             android:textColor="@color/text_color"
+             android:textSize="22dp"
+             app:layout_constraintEnd_toEndOf="@+id/rl"
+
+             app:layout_constraintStart_toStartOf="@id/rl"
+             app:layout_constraintTop_toBottomOf="@+id/rl" />
+
+
+         <RelativeLayout
+             android:id="@+id/rl2"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             app:layout_constraintEnd_toEndOf="@id/appointment_text"
+             app:layout_constraintStart_toStartOf="@id/appointment_text"
+             app:layout_constraintTop_toBottomOf="@+id/appointment_text">
+
+            <ImageView
+                android:id="@+id/doc_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/doc_img"
+                tools:layout_editor_absoluteX="82dp"
+                tools:layout_editor_absoluteY="69dp" />
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@+id/doc_img"
+                android:layout_toRightOf="@+id/doc_img"
+                android:orientation="horizontal">
+
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="8dp"
+                   android:layout_marginTop="3dp"
+                   android:text="Dr Amelia"
+                   android:textColor="@color/black"
+                   android:textStyle="bold" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="8dp"
+                   android:layout_marginTop="3dp"
+                   android:text="Gynecologist  |  7 years"
+                   android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linear_layout12"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@+id/doc_img"
+                android:layout_toRightOf="@+id/doc_img"
+                android:orientation="horizontal">
+
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="8dp"
+
+                   android:text="Booked Appointment"
+                   android:textColor="@color/black"
+                   android:textSize="12dp" />
+
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/imageView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_toRightOf="@id/linear_layout12"
+                android:src="@drawable/group_156"
+                tools:layout_editor_absoluteX="107dp"
+                tools:layout_editor_absoluteY="321dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+
+
+
+
+
+         </RelativeLayout>
+
+         <RelativeLayout
+             android:id="@+id/rl3"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="8dp"
+             app:layout_constraintEnd_toEndOf="@id/rl2"
+             app:layout_constraintStart_toStartOf="@id/rl2"
+             app:layout_constraintTop_toBottomOf="@+id/rl2">
+
+            <ImageView
+                android:id="@+id/doc_img2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/doc4"
+                tools:layout_editor_absoluteX="82dp"
+                tools:layout_editor_absoluteY="69dp" />
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@+id/doc_img2"
+                android:layout_toRightOf="@+id/doc_img2"
+                android:orientation="horizontal">
+
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="8dp"
+                   android:layout_marginTop="3dp"
+                   android:text="Dr Shyna"
+                   android:textColor="@color/black"
+                   android:textStyle="bold" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="8dp"
+                   android:layout_marginTop="3dp"
+                   android:text="Gynecologist  |  4 years"
+                   android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linear_layout22"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@+id/doc_img2"
+                android:layout_toRightOf="@+id/doc_img2"
+                android:orientation="horizontal">
+
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="8dp"
+
+                   android:text="Appointed on 1 April"
+                   android:textColor="@color/black"
+                   android:textSize="12dp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/appoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linear_layout23"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/doc_img2"
+                android:background="@drawable/grey_btn_back"
+                android:gravity="center_vertical"
+                android:text="Appoint Again"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+         </RelativeLayout>
+
+         <TextView
+             android:id="@+id/journaling_text"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:fontFamily="@font/firasans_semibold"
+             android:padding="4dp"
+             android:layout_marginStart="20dp"
+             android:layout_marginTop="20dp"
+             android:layout_marginEnd="20dp"
+             android:text="Your Journal"
+             android:textColor="@color/text_color"
+             android:textSize="22dp"
+             app:layout_constraintEnd_toEndOf="@+id/rl3"
+             app:layout_constraintStart_toStartOf="@+id/rl3"
+             app:layout_constraintTop_toBottomOf="@id/rl3" />
+
+         <ImageView
+             android:id="@+id/imageView26"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@drawable/jor_card"
+             app:layout_constraintStart_toStartOf="@id/journaling_text"
+             app:layout_constraintEnd_toEndOf="@id/journaling_text"
+             app:layout_constraintTop_toBottomOf="@id/journaling_text"
+             tools:layout_editor_absoluteX="67dp"
+             tools:layout_editor_absoluteY="250dp" />
+
+         <TextView
+             android:id="@+id/diet_text"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:fontFamily="@font/firasans_semibold"
+             android:padding="4dp"
+             android:layout_marginStart="20dp"
+             android:layout_marginEnd="20dp"
+             android:text="Diet Planning"
+             android:textColor="@color/text_color"
+             android:textSize="22dp"
+             app:layout_constraintEnd_toEndOf="@+id/imageView26"
+             app:layout_constraintStart_toStartOf="@+id/imageView26"
+             app:layout_constraintTop_toBottomOf="@+id/imageView26" />
+
+         <ImageView
+             android:id="@+id/imageView27"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@drawable/diet_card"
+             app:layout_constraintStart_toStartOf="@id/diet_text"
+             app:layout_constraintEnd_toEndOf="@id/diet_text"
+             app:layout_constraintTop_toBottomOf="@id/diet_text"
+             tools:layout_editor_absoluteX="67dp"
+             tools:layout_editor_absoluteY="250dp" />
+
+         <TextView
+             android:id="@+id/vac_text"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:fontFamily="@font/firasans_semibold"
+             android:padding="4dp"
+             android:layout_marginStart="20dp"
+             android:layout_marginEnd="20dp"
+             android:text="Vaccination Tracker"
+             android:textColor="@color/text_color"
+             android:textSize="22dp"
+             app:layout_constraintEnd_toEndOf="@+id/imageView27"
+             app:layout_constraintStart_toStartOf="@+id/imageView27"
+             app:layout_constraintTop_toBottomOf="@+id/imageView27" />
+
+         <ImageView
+             android:id="@+id/imageView28"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@drawable/vac_card"
+             app:layout_constraintStart_toStartOf="@id/vac_text"
+             app:layout_constraintEnd_toEndOf="@id/vac_text"
+             app:layout_constraintTop_toBottomOf="@id/vac_text"
+             tools:layout_editor_absoluteX="67dp"
+             tools:layout_editor_absoluteY="250dp" />
+
+
+
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+   </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".yoga_and_meditation.YogaDesc">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/green_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        app:cardBackgroundColor="#63d2c8"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="@dimen/dim_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/text_yoga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:fontFamily="@font/firasans_semibold"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/How_Do"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="12dp"
+                android:layout_marginTop="4dp"
+                android:elevation="@dimen/dim_16"
+                android:fontFamily="@font/firasans_semibold"
+                android:text="How to do it:"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/yoga_detail" />
+
+            <TextView
+                android:id="@+id/how_to"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:elevation="@dimen/dim_16"
+                android:fontFamily="@font/firasans_regular"
+                android:padding="8dp"
+                android:text="Separate your feet such that your buttocks and perineum can rest flat on the ground.\n
+Now, fold both legs from the knees and join both soles together.\n
+Try to separate the knees further, but do not strain.\n
+Exhale and fasten your hands over your toes.\n
+Inhale, pull your heels up to the perineum region (the region between the thighs) as close as possible. "
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+
+                app:layout_constraintTop_toBottomOf="@id/How_Do" />
+
+            <TextView
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/purple_btn_back"
+                android:backgroundTint="@color/text_color"
+                android:fontFamily="@font/firasans_semibold"
+                android:text="  Let's Do it  "
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/how_to" />
+
+            <TextView
+                android:id="@+id/buttoncam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/purple_btn_back"
+                android:backgroundTint="@color/text_color"
+                android:fontFamily="@font/firasans_semibold"
+                android:text="  Check Your Posture  "
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.892"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/yoga_img_card" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/yoga_img_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                android:layout_marginHorizontal="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_yoga">
+
+                <ImageView
+                    android:id="@+id/yoga_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="280dp"
+                    android:layout_marginStart="5dp"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/guard"
+                    android:elevation="24dp"
+                    android:src="@drawable/work" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/yoga_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yoga details"
+                android:textColor="@color/black"
+                android:fontFamily="@font/firasans_regular"
+                app:layout_constraintStart_toStartOf="@+id/How_Do"
+                app:layout_constraintTop_toBottomOf="@+id/buttoncam" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

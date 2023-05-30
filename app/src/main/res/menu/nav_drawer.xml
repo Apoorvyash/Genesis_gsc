@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/baseline_person_24"
+            android:title="Profile"/>
+    <item
+        android:id="@+id/nav_journel"
+        android:icon="@drawable/baseline_create_24"
+        android:title="Journal"/>
+    <item
+        android:id="@+id/nav_does"
+        android:icon="@drawable/baseline_thumbs_up_down_24"
+        android:title="Do and Don't"/>
+
+    </group>
+
+    <item
+        android:title="">
+        <menu>
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/baseline_logout_24"
+                android:title="Logout"/>
+        </menu>
+    </item>
+
+</menu>

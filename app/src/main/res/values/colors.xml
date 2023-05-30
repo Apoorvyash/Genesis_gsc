@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#888</color>
+
+    <color name="back_color">#13253D</color>
+    <color name="bot_back_color">#203757</color>
+    <color name="user_back_color">#6965ff</color>
+    <color name="fab_color">#6B6AFF</color>
+
+
+
+    <color name="blue">#1DA1F2</color>
+    <color name="grey">#282828</color>
+    <color name="light_grey">#484848</color>
+    <color name="light_blue">#701DA1F2</color>
+    <color name="dark_blue">#002f8d</color>
+    <color name="pastel_blue">#93BFCF</color>
+    <color name="pastel_pink">#F7C8E0</color>
+    <color name="pastel_green">#DFFFD8</color>
+    <color name="pastel_purple">#D9ACF5</color>
+    <color name="pastel_orange">#FFDCA9</color>
+    <color name="pastel_yellow">#E5EBB2</color>
+    <color name="pastel_violet">#98A8F8</color>
+    <color name="lavender">#8F94E4</color>
+    <color name="lavender2">#668F94E4</color>
+    <color name="base_color">#9292FF</color>
+    <color name="colorPrimary">#919191</color>
+    <color name="text_color">#3F334E</color>
+    <color name="text_dark">#303030</color>
+    <color name="orange">#FF9B6A</color>
+    <color name="back_blue">#B2B2FF</color>
+    <color name="light_orange">#5BFF9B6A</color>
+
+
+</resources>

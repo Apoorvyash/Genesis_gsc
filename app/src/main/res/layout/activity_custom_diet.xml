@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomDiet">
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="28dp"
+        android:padding="4dp"
+        android:text="Breakfast"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_d4"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="40dp"
+                android:elevation="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/cardback4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:srcCompat="@drawable/rectangle_97" />
+
+                    <TextView
+                        android:id="@+id/snacks_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Chappati/Roti"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/carb1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="Carbohydrate-20gm"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        app:layout_constraintEnd_toEndOf="@+id/snacks_text"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="@+id/snacks_text"
+                        app:layout_constraintTop_toBottomOf="@+id/snacks_text" />
+
+                    <TextView
+                        android:id="@+id/pro1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:text="Protein-4gm"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        app:layout_constraintEnd_toEndOf="@+id/carb1"
+                        app:layout_constraintStart_toStartOf="@+id/carb1"
+                        app:layout_constraintTop_toBottomOf="@+id/carb1" />
+
+                    <TextView
+                        android:id="@+id/fat1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Fat-1gm"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        app:layout_constraintEnd_toEndOf="@+id/pro1"
+                        app:layout_constraintStart_toStartOf="@+id/pro1"
+                        app:layout_constraintTop_toBottomOf="@+id/pro1" />
+
+                    <TextView
+                        android:id="@+id/qnt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="248dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Qnt-"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/qn1_ed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:hint="1"
+                        android:inputType="number"
+                        android:textColor="#FFFFFF"
+                        android:textColorHighlight="@color/white"
+                        android:textSize="16dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/qnt1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/qnt1"
+                        app:layout_constraintTop_toTopOf="@+id/qnt1" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/snacks_text"
+                        app:layout_constraintEnd_toStartOf="@+id/qnt1"
+                        app:layout_constraintTop_toTopOf="@+id/snacks_text" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card1"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="40dp"
+                android:elevation="30dp"
+                app:layout_constraintEnd_toEndOf="@id/card_d4"
+                app:layout_constraintStart_toStartOf="@id/card_d4"
+                app:layout_constraintTop_toBottomOf="@id/card_d4">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/cardback5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:srcCompat="@drawable/rectangle_97" />
+
+                    <TextView
+                        android:id="@+id/boiledegg_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Boiled Egg"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/carb2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="Carbohydrate-0.6gm"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        app:layout_constraintEnd_toEndOf="@+id/boiledegg_text"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="@+id/boiledegg_text"
+                        app:layout_constraintTop_toBottomOf="@+id/boiledegg_text" />
+
+                    <TextView
+                        android:id="@+id/pro2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:text="Protein-6.3gm"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        app:layout_constraintEnd_toEndOf="@+id/carb2"
+                        app:layout_constraintStart_toStartOf="@+id/carb2"
+                        app:layout_constraintTop_toBottomOf="@+id/carb2" />
+
+                    <TextView
+                        android:id="@+id/fat2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Fat-2gm"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        app:layout_constraintEnd_toEndOf="@+id/pro2"
+                        app:layout_constraintStart_toStartOf="@+id/pro2"
+                        app:layout_constraintTop_toBottomOf="@+id/pro2" />
+
+                    <TextView
+                        android:id="@+id/qnt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="248dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Qnt-"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/qn2_ed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:hint="1"
+                        android:inputType="number"
+                        android:textColor="#FFFFFF"
+                        android:textColorHighlight="@color/white"
+                        android:textSize="16dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/qnt2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/qnt2"
+                        app:layout_constraintTop_toTopOf="@+id/qnt2" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/boiledegg_text"
+                        app:layout_constraintEnd_toStartOf="@+id/qnt2"
+                        app:layout_constraintTop_toTopOf="@+id/boiledegg_text"
+                        app:layout_constraintVertical_bias="0.0" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card4"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="40dp"
+                android:elevation="30dp"
+                app:layout_constraintEnd_toEndOf="@id/card1"
+                app:layout_constraintStart_toStartOf="@id/card1"
+                app:layout_constraintTop_toBottomOf="@id/card1">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/cardback6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0"
+                        app:srcCompat="@drawable/rectangle_97" />
+
+                    <TextView
+                        android:id="@+id/food_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Oats 1 bowl"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/carb_c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="Carbohydrate-103gm"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        app:layout_constraintEnd_toEndOf="@+id/food_name"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="@+id/food_name"
+                        app:layout_constraintTop_toBottomOf="@+id/food_name" />
+
+                    <TextView
+                        android:id="@+id/pro_p"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:text="Protein-26gm"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        app:layout_constraintEnd_toEndOf="@+id/carb_c"
+                        app:layout_constraintStart_toStartOf="@+id/carb_c"
+                        app:layout_constraintTop_toBottomOf="@+id/carb_c" />
+
+                    <TextView
+                        android:id="@+id/fat_f"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Fat-11gm"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        app:layout_constraintEnd_toEndOf="@+id/pro_p"
+                        app:layout_constraintStart_toStartOf="@+id/pro_p"
+                        app:layout_constraintTop_toBottomOf="@+id/pro_p" />
+
+                    <TextView
+                        android:id="@+id/qnt3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="248dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Qnt-"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/qn3_ed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:hint="1"
+                        android:inputType="number"
+                        android:textColor="#FFFFFF"
+                        android:textColorHighlight="@color/white"
+                        android:textSize="16dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/qnt3"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/qnt3"
+                        app:layout_constraintTop_toTopOf="@+id/qnt3" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/qnt3"
+                        app:layout_constraintEnd_toStartOf="@+id/qnt3"
+                        app:layout_constraintTop_toTopOf="@+id/qnt3" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_background_black"
+        android:padding="8dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="Check"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.159"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/scroll_view" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

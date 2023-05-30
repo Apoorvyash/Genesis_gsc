@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "966596442183",
+    "project_id": "genesis-4e793",
+    "storage_bucket": "genesis-4e793.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:966596442183:android:992ad69022a06bdd949962",
+        "android_client_info": {
+          "package_name": "com.androrubin.genesis"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "966596442183-alkkm78usq405tpom3o4givei2di2krg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.androrubin.genesis",
+            "certificate_hash": "144fbab301384733907202965df1ed8e1782f2fc"
+          }
+        },
+        {
+          "client_id": "966596442183-06piapevi404pv27tpp0uqrhfjsqmkvt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBa-8dQF78Dgu4v7w2TnPxYweCOGcPd7Co"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "966596442183-06piapevi404pv27tpp0uqrhfjsqmkvt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

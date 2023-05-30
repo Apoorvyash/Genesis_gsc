@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.home.trackers.BreastFeedingTrackerActivity">
+
+        <ImageView
+            android:id="@+id/rightStartBtn"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/baseline_play_arrow_24"
+            app:layout_constraintEnd_toEndOf="@+id/rightTimerBtn"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/rightTimerBtn"
+            app:layout_constraintTop_toTopOf="@+id/leftStartBtn" />
+
+        <ImageView
+            android:id="@+id/leftStartBtn"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/baseline_play_arrow_24"
+            app:layout_constraintEnd_toEndOf="@+id/leftTimerBtn"
+            app:layout_constraintStart_toStartOf="@+id/leftTimerBtn"
+            app:layout_constraintTop_toBottomOf="@+id/leftTimerBtn" />
+
+        <TextView
+            android:id="@+id/dayTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:textColor="@color/black"
+            android:text="Day"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+        <TextView
+            android:id="@+id/totalTimerTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="00:00"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dayTV" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="min"
+            app:layout_constraintEnd_toStartOf="@+id/textView20"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/totalTimerTV"
+            app:layout_constraintTop_toBottomOf="@+id/totalTimerTV" />
+
+        <TextView
+            android:id="@+id/leftTimerBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:text="00:00"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toStartOf="@+id/rightTimerBtn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+        <TextView
+            android:id="@+id/rightTimerBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:textColor="@color/black"
+            android:text="00:00"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/leftTimerBtn"
+            app:layout_constraintTop_toTopOf="@+id/leftTimerBtn" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Left"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/leftStartBtn"
+            app:layout_constraintStart_toStartOf="@+id/leftStartBtn"
+            app:layout_constraintTop_toBottomOf="@+id/leftStartBtn" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Right"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/rightStartBtn"
+            app:layout_constraintStart_toStartOf="@+id/rightStartBtn"
+            app:layout_constraintTop_toTopOf="@+id/textView17" />
+
+        <Button
+            android:id="@+id/saveRecordBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="280dp"
+            android:text="save"
+            android:textColor="@color/black"
+            android:fontFamily="@font/firasans_semibold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/totalTimerTV" />
+
+        <TextView
+            android:id="@+id/historyBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            android:textSize="26sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/firasans_semibold"
+            android:text="History"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/saveRecordBtn" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sec"
+            app:layout_constraintEnd_toEndOf="@+id/totalTimerTV"
+            app:layout_constraintTop_toTopOf="@+id/textView14" />
+
+        <TextView
+            android:id="@+id/dateTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="Date"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/dayTV"
+            app:layout_constraintTop_toTopOf="@+id/dayTV" />
+
+        <TextView
+            android:id="@+id/timeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="Time"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/dateTv"
+            app:layout_constraintTop_toTopOf="@+id/dateTv" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/progressBar"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:lottie_rawRes="@raw/progress_loader"
+            app:lottie_loop="true"
+            app:layout_constraintBottom_toBottomOf="@+id/leftStartBtn"
+            app:layout_constraintEnd_toEndOf="@+id/leftStartBtn"
+            app:layout_constraintStart_toStartOf="@+id/leftStartBtn"
+            app:layout_constraintTop_toTopOf="@+id/leftStartBtn" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/progressBar2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:lottie_rawRes="@raw/progress_loader"
+            app:lottie_loop="true"
+            app:layout_constraintBottom_toBottomOf="@+id/rightStartBtn"
+            app:layout_constraintEnd_toEndOf="@+id/rightStartBtn"
+            app:layout_constraintStart_toStartOf="@+id/rightStartBtn"
+            app:layout_constraintTop_toTopOf="@+id/rightStartBtn" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Breast Feeding Tracker"
+            android:fontFamily="@font/firasans_semibold"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/imageView26"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/breastfeedingRv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/historyBtn" />
+
+        <TextView
+            android:id="@+id/resetBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="Reset"
+            android:drawableStart="@drawable/baseline_restart_alt_24"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/saveRecordBtn"
+            app:layout_constraintEnd_toEndOf="@+id/saveRecordBtn"
+            app:layout_constraintStart_toStartOf="@+id/saveRecordBtn" />
+
+        <TextView
+            android:id="@+id/ampmTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:text="pm"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/timeTv"
+            app:layout_constraintStart_toEndOf="@+id/timeTv"
+            app:layout_constraintTop_toTopOf="@+id/timeTv" />
+
+        <ImageView
+            android:id="@+id/imageView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView16"
+            app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

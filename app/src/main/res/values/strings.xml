@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Genesis</string>
+
+
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_community">Community</string>
+    <string name="title_notifications">Aid</string>
+
+
+    <string name="facebook_app_id">1614429612316201</string>
+    <string name="facebook_client_token">07048f554a8417b157a1bc6ac1f40091</string>
+    <string name="fb_login_protocol_scheme">fb1234</string>
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="discp1">We can\'t wait to help you welcome your little one into the world</string>
+    <string name="desc2">Your health and your baby\'s health are our top priorities.Let us help you keep track of your medication and health checkups for a worry-free pregnancy.</string>
+    <string name="desc3">We understand how overwhelming it can be to keep track of appointments and resources. Let\'s make it simple and easy to manage.</string>
+    <string name="desc5">Let our app be your go-to resource for creating a personalized exercise schedule and tracking your progress towards a healthier, happier you.</string>
+    <string name="title_activity_maps">MapsActivity</string>
+
+    <string-array name="child_age">
+        <item>0 year</item>
+        <item>1 year</item>
+        <item>2 year</item>
+        <item>3 year</item>
+    </string-array>
+
+    <string name="date">10th</string>
+    <string name="month">March</string>
+    <string name="pro_text">Protein is critical for ensuring the proper growth of baby’s tissues and organs, including the brain. It also helps with breast and uterine tissue growth during pregnancy. It even plays a role in your increasing blood supply, allowing more blood to be sent to your baby. Your protein needs increase during each trimester of pregnancy. Research suggestsTrusted Source that protein intake during pregnancy should be even higher than some current recommendations. It’s time to ramp up those shrimp fajitas, pork curries, jerk chicken, and salmon teriyaki. You’ll need to eat about 70 to 100 gTrusted Source of protein a day, depending on your weight and which trimester you’re in. Talk to your doctor to see how much you specifically need.</string>
+    <string name="plan_diet">Select as per your choice and mood and compare the nutritional value of your planned diet to the recommended one</string>
+
+    <string name="sos">SOS</string>
+    <string name="in_case_of_emergency_keep_telling_family_members_to_contact_me">In case of emergency, keep telling family members to contact me</string>
+    <string name="guard">GUARD</string>
+    <string name="apoorv_yash">Apoorv Yash</string>
+
+
+</resources>

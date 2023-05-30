@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_none1"
+        android:enabled="true"
+        android:title=""
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_none2"
+        android:enabled="true"
+        android:title=""
+
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_hospital"
+        android:enabled="true"
+        android:title="Hospitals"
+        android:icon="@drawable/baseline_local_hospital_24"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_none3"
+        android:enabled="true"
+        android:title=""
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_none4"
+        android:enabled="true"
+        android:title=""
+        app:showAsAction="ifRoom"/>
+
+
+</menu>
